@@ -1,0 +1,139 @@
+.container h1 {
+    font-family: 'Audiowide', sans-serif; /* Замените 'Gothic Font' на имя вашего готического шрифта */
+    /* Дополнительные стили шрифта (размер, цвет и т.д.) */
+    font-size: 44px; /* Размер шрифта */
+    color: #ffffff; /* Цвет текста */
+    /* Другие стили по вашему усмотрению */
+}
+
+#rotating-image {
+    width: 200px; /* Установите размер изображения по вашему усмотрению */
+    height: 200px;
+    position: relative;
+    animation: rotate 10s linear infinite; /* Настройте длительность и тип анимации, а также укажите, что она будет бесконечной */
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg); /* Угол начального положения */
+    }
+    to {
+        transform: rotate(360deg); /* Угол конечного положения (полный оборот) */
+    }
+}
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#purple-header {
+    background: linear-gradient(to bottom, #180329, #685e70);
+    background-size: 200% 200%;
+    animation: backgroundAnimation 5s ease infinite; /* Уменьшаем длительность анимации */
+    color: white;
+    margin: auto;
+    padding: auto;
+    
+}
+
+    /* Стили для навигационного меню */
+    .navbar {
+        background: linear-gradient(to bottom, #2e2e2e, #131313); /* Градиент от темно-фиолетового к средне-фиолетовому */
+    background-size: cover;
+    }
+
+    .navbar-brand img {
+        width: 10%;
+        height: 10%;
+        margin-right: 10px;
+        transition: transform 0.5s; /* Добавляем плавную анимацию */
+    }
+
+    .navbar-brand img:hover {
+        transform: scale(1.1); /* Увеличиваем размер изображения при наведении мыши */
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        color: white; /* Цвет текста элементов меню */
+    }
+
+    .navbar-nav .nav-item .nav-link:hover {
+        animation: pulse 1s ease infinite; /* Анимация пульсации при наведении мыши */
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.05);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    #rotating-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%; /* Это позволит изображению занимать всю высоту родительского элемента */
+    }
+    
+    .custom-header {
+        background-image: url('/img/SE-1.jpg'); /* Укажите путь к вашей картинке */
+        background-size: cover; /* Растягивает изображение на всю площадь хедера */
+        background-position: center; /* Центрирует изображение на хедере */
+        height: 20vh;
+        text-align: center; /* Выравнивание текста по центру */
+        color: white; /* Цвет текста на фоне изображения */
+    }
+    .btn-purple {
+        background-color: rgb(204, 204, 204);
+        color: white;
+    }
+
+    #purple2 {
+        background: linear-gradient(to bottom, #180329, #685e70);
+        background-size: 200% 200%;
+        animation: backgroundAnimation 5s ease infinite; /* Уменьшаем длительность анимации */
+        color: white;
+
+    }
+    .lead2 {
+        font-size: 2vh;
+margin-bottom: 0%;
+    }
+    #purple3 {
+        background: linear-gradient(to bottom, #180329, #685e70);
+        background-size: 200% 200%;
+        animation: backgroundAnimation 5s ease infinite; /* Уменьшаем длительность анимации */
+        color: white;
+    padding: 9vh;
+    font-size: 30px;
+    }
+    #request{
+        background: linear-gradient(to bottom, #180329, #685e70);
+        background-size: 200% 200%;
+        animation: backgroundAnimation 5s ease infinite; /* Уменьшаем длительность анимации */
+        color: white;
+    padding-top: 3vh;
+    padding-bottom: 1vh;
+    }
+    #purple4 {
+        background: linear-gradient(to bottom, #180329, #685e70);
+        background-size: 200% 200%;
+        animation: backgroundAnimation 5s ease infinite; /* Уменьшаем длительность анимации */
+        color: white;
+    padding: 14vh;
+    font-size: 30px;
+    }
+    
+    
