@@ -2087,6 +2087,26 @@ font-family: "Montserrat";
 	
   <div class="wp-block-cover alignfull has-background-dim-20 has-background-dim" style="background-image:url('https://notnyskarb.com/wp-content/uploads/2024/08/novejshyj-1920h1080.jpg'); background-size: cover; background-position: center;">
     <div class="wp-block-cover__inner-container">
+        <!-- Внутренний контент -->
+    </div>
+</div>
+
+<style>
+  /* Общие стили */
+  .wp-block-cover {
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* Для экранов шириной менее 768px (например, мобильные устройства) */
+  @media (max-width: 767px) {
+    .wp-block-cover {
+      background-size: contain; /* Изображение полностью умещается, без обрезания */
+      background-position: center top; /* Центрировать изображение сверху */
+    }
+  }
+</style>
+
       <!-- wp:heading {"align":"center","level":1} -->
   
 </div></div>
