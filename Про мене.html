@@ -2085,31 +2085,33 @@ font-family: "Montserrat";
 				
 <article id="post-2866" class="post-2866 page type-page status-publish hentry">
 	
-  <div class="wp-block-cover alignfull has-background-dim-20 has-background-dim" style="background-image:url('https://notnyskarb.com/wp-content/uploads/2024/08/novejshyj-1920h1080.jpg'); background-size: cover; background-position: center;">
+  <div class="wp-block-cover alignfull has-background-dim-20 has-background-dim" 
+     style="background-image:url('https://notnyskarb.com/wp-content/uploads/2024/08/novejshyj-1920h1080.jpg'); 
+            background-size: cover; 
+            background-position: center;">
     <div class="wp-block-cover__inner-container">
         <!-- Внутренний контент -->
     </div>
 </div>
 
 <style>
-  /* Общие стили */
+  /* Общие стили для всех устройств */
   .wp-block-cover {
     background-size: cover;
     background-position: center;
+    background-image: url('https://notnyskarb.com/wp-content/uploads/2024/08/novejshyj-1920h1080.jpg'); /* Используем высокое разрешение для всех устройств */
   }
 
-  /* Для экранов шириной менее 768px (например, мобильные устройства) */
+  /* Убираем специальные стили для мобильных устройств, чтобы всегда использовалось полное разрешение */
   @media (max-width: 767px) {
     .wp-block-cover {
-      background-size: contain; /* Изображение полностью умещается, без обрезания */
-      background-position: center top; /* Центрировать изображение сверху */
+      background-size: cover;
+      background-position: center;
+      background-image: url('https://notnyskarb.com/wp-content/uploads/2024/08/novejshyj-1920h1080.jpg'); /* Оставляем изображение высокого разрешения */
     }
   }
 </style>
 
-      <!-- wp:heading {"align":"center","level":1} -->
-  
-</div></div>
 
 
 
